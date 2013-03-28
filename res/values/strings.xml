@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Namaaz Times</string>
+    <string name="app_nameforsettings">Namaaz Times for Mumineen</string>
+    <string name="app_version">2.4.1</string>
+    <string name="app_versionforsettings">Version 2.4.1</string>
+    <string name="cardinal_north">N</string>
+    <string name="cardinal_east">E</string>
+    <string name="cardinal_south">S</string>
+    <string name="cardinal_west">W</string>
+    <string name="local_service_label">Label</string>
+    <string name="local_service_started">Started</string>
+    <string name="local_service_stopped">Stopped</string>
+    <string name="local_service_connected">Connected</string>
+    <string name="local_service_disconnected">Disconnected</string>
+</resources>

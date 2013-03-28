@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ScrollView01" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+<TextView android:id="@+id/AppName" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:text="@string/app_nameforsettings" android:layout_marginTop="10dp" android:textSize="22dp"/>
+<TextView android:id="@+id/AppVer" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:textSize="18dp" android:text="@string/app_versionforsettings"/>
+
+<View android:layout_width="fill_parent" android:layout_height="2dip" android:background="#FF888888" android:layout_marginTop="18dp"/>
+
+<TextView android:id="@+id/TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:text="Choose font size:" android:layout_marginTop="18dp" android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerFontSize" android:layout_width="wrap_content">
+</Spinner>
+
+<TextView android:id="@+id/TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:text="Choose how Namaaz Times are displayed:" android:layout_marginTop="18dp" android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerAMPM" android:layout_width="wrap_content">
+</Spinner>
+
+<View android:layout_width="fill_parent" android:layout_height="2dip" android:background="#FF888888" android:layout_marginTop="18dp"/>
+
+<TextView android:id="@+id/TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginTop="18dp" android:textColor="@color/text_color" android:textSize="18dp" android:text="Choose Calendar View:">
+</TextView>
+<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerCalType" android:layout_width="wrap_content">
+</Spinner>
+
+<CheckBox android:id="@+id/CheckBoxCalGreg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Show Gregorian Dates in Calendar" android:textColor="@color/text_color" android:textSize="18dp">
+</CheckBox>
+
+<CheckBox android:id="@+id/CheckBoxCalDB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Show Deeni Miqaats in Calendar" android:textColor="@color/text_color" android:textSize="18dp">
+</CheckBox>
+
+<CheckBox android:id="@+id/CheckBoxCalAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Show days in Calendar even when no Miqaat is present" android:textColor="@color/text_color" android:textSize="18dp">
+</CheckBox>
+
+<View android:layout_width="fill_parent" android:layout_height="2dip" android:background="#FF888888" android:layout_marginTop="18dp"/>
+
+<CheckBox android:id="@+id/CheckBoxNamaazNotify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Enable Namaaz Notifications" android:textColor="@color/text_color" android:textSize="18dp">
+</CheckBox>
+
+<CheckBox android:id="@+id/CheckBoxNamaazNotifySound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Play Azaan" android:textColor="@color/text_color" android:textSize="18dp">
+</CheckBox>
+
+<TextView android:id="@+id/TextViewNamaazNotifyVibrate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:text="Vibrate Duration:" android:layout_marginTop="18dp" android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerNamaazNotifyVibrate" android:layout_width="wrap_content">
+</Spinner>
+
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Test Namaaz Notification!" android:id="@+id/TestNamaaz" android:textSize="18dp" android:layout_marginTop="18dp">
+</Button>
+
+<View android:layout_width="fill_parent" android:layout_height="2dip" android:background="#FF888888" android:layout_marginTop="18dp"/>
+
+<CheckBox android:id="@+id/CheckBoxMiqaatNotify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Enable Miqaat Notifications" android:textColor="@color/text_color" android:textSize="18dp">
+</CheckBox>
+<TextView android:id="@+id/MiqaatNotifyNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:text="Note: Miqaat Notifications are issued the prevailing night, at Magrib." android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Test Miqaat Notification!" android:id="@+id/TestMiqaat" android:textSize="18dp" android:layout_marginTop="18dp">
+</Button>
+
+<View android:layout_width="fill_parent" android:layout_height="2dip" android:background="#FF888888" android:layout_marginTop="18dp"/>
+
+<CheckBox android:id="@+id/CheckBoxLiveGPS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Advanced: Live GPS Tracking" android:textColor="@color/text_color" android:textSize="18dp">
+</CheckBox>
+<TextView android:id="@+id/LiveGPSDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:text="Live GPS Tracking is an option, on the main Namaaz Times tab, that attempts to obtain and maintain a GPS lock, update Namaaz Times and provide Qibla orientation, with respect to GPS movement, all on the fly. This mode can be useful when travelling and attempting to obtain a GPS lock to calculate Namaaz Times, such as in airplanes. Please note to switch off tracking after use, otherwise GPS will cause excessive battery drain." android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+
+</LinearLayout>
+
+</ScrollView>

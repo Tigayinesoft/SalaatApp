@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" 
+android:orientation="vertical" 
+android:layout_width="fill_parent" 
+android:scrollbarAlwaysDrawVerticalTrack="true" 
+android:scrollbars="vertical" 
+android:scrollbarStyle="outsideOverlay" 
+android:layout_height="wrap_content">
+
+<RelativeLayout 
+android:id="@+id/RelativeLayout01" 
+android:layout_height="wrap_content" 
+android:layout_width="fill_parent"
+android:layout_marginTop="5dp">
+
+<TextView android:id="@+id/Title" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Year/Month" android:textSize="20px" android:layout_centerHorizontal="true" android:layout_marginBottom="10dp"/>
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/TodayButton" android:text="Today" android:layout_centerHorizontal="true" android:layout_below="@+id/Title"></Button>
+<Button android:id="@+id/PrevButton" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Prev" android:layout_alignParentLeft="true" android:layout_marginLeft="5px" android:layout_alignBottom="@+id/TodayButton"></Button>
+<Button android:id="@+id/NextButton" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Next" android:layout_alignParentRight="true" android:layout_marginRight="5px" android:layout_alignBottom="@+id/TodayButton"></Button>
+<Button android:text="Gregorian Date" android:id="@+id/ButtonGreg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/TodayButton" android:layout_marginLeft="5px" android:layout_alignParentLeft="true"></Button>
+<Button android:text="Hijri Date" android:id="@+id/ButtonHijri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/TodayButton" android:layout_marginLeft="5px" android:layout_alignParentRight="true"></Button>
+
+</RelativeLayout>
+
+<ScrollView android:id="@+id/ScrollView02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<RelativeLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent">
+<TextView android:id="@+id/OldMiqaats" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:text="Miqaats... " android:layout_marginLeft="5px" android:layout_marginRight="5px"/>
+<TextView android:id="@+id/TodaysMiqaat" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:text="Miqaats... " android:layout_marginLeft="5px" android:layout_marginRight="5px" android:layout_below="@+id/OldMiqaats" android:background="@color/today_miqaat_bg_color"/>
+<TextView android:id="@+id/NewMiqaats" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:text="Miqaats... " android:layout_marginLeft="5px" android:layout_marginRight="5px" android:layout_below="@+id/TodaysMiqaat"/>
+</RelativeLayout>
+</ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" 
+android:id="@+id/layout_root" 
+android:layout_height="fill_parent" 
+android:padding="5dp" android:orientation="horizontal" android:layout_width="match_parent">
+
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<Spinner style="@style/SpinnerAsEditText" android:id="@+id/SpinnerDate" android:layout_width="40dp" android:layout_height="wrap_content"/>
+<Spinner style="@style/SpinnerAsEditText" android:id="@+id/SpinnerMonth" android:layout_height="wrap_content" android:layout_toRightOf="@+id/SpinnerDate" android:layout_width="180dp"/>
+<EditText android:text="1431" android:id="@+id/EditTextYear" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/SpinnerMonth" android:inputType="number"/>
+<Button android:text="Go" android:id="@+id/ButtonGo" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_below="@+id/EditTextYear"/>
+<Button android:text="Cancel" android:id="@+id/ButtonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ButtonGo" android:layout_below="@+id/EditTextYear"/>
+</RelativeLayout>
+
+</LinearLayout>

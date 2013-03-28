@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ScrollView01" android:layout_height="match_parent" android:layout_width="wrap_content">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+              
+<TextView android:id="@+id/Label" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:text="Current Location Settings" android:layout_marginTop="10dp" android:textSize="24dp"/>
+<TextView android:id="@+id/PlaceInfo" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:text="Place" android:textSize="18dp"/>
+<TextView android:id="@+id/PlaceInfo2" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:text="Place2" android:textSize="18dp"/>
+<TextView android:id="@+id/Timezone" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:text="Timezone" android:textSize="18dp"/>
+<TextView android:id="@+id/MagDec" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="right" android:text="MagDec" android:textSize="18dp"/>
+
+<TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Choose how your location is determined:" android:textColor="@color/text_color" android:layout_marginTop="18dp" android:textSize="18dp">
+</TextView>
+<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerLocMethod" android:layout_width="wrap_content">
+</Spinner>
+
+<CheckBox android:id="@+id/AutoTrackLoc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Auto Track Location Changes" android:textColor="@color/text_color" android:textSize="18dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+</CheckBox>
+
+<TextView android:text="Now obtaining GPS fix... Please wait until GPS status icon becomes stable (i.e. stops blinking) before pressing 'Save'." android:id="@+id/GPSNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<TextView android:text="Latitude" android:id="@+id/latTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+<EditText android:text="" android:id="@+id/lat" android:layout_height="wrap_content" android:editable="true" android:numeric="integer|signed|decimal" android:layout_width="fill_parent" android:layout_marginLeft="100dp">
+</EditText>
+</RelativeLayout>
+
+<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<TextView android:text="Longitude" android:id="@+id/lngTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+<EditText android:text="" android:id="@+id/lng" android:layout_height="wrap_content" android:editable="true" android:numeric="integer|signed|decimal" android:layout_width="fill_parent" android:layout_marginLeft="100dp">
+</EditText>
+</RelativeLayout>
+
+<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<TextView android:text="Location" android:id="@+id/locTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+<EditText android:text="" android:id="@+id/loc" android:layout_height="wrap_content" android:editable="true" android:layout_width="fill_parent" android:layout_marginLeft="100dp">
+</EditText>
+</RelativeLayout>
+
+<TextView android:text="Note: This requires an active Internet connection. Enter your location, using either zip code or city, state and country inforamtion." android:id="@+id/locTextViewNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textSize="18dp">
+</TextView>
+
+<TextView android:id="@+id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Choose how your time zone is determined:" android:layout_marginTop="18dp" android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerTZMethod" android:layout_width="wrap_content">
+</Spinner>
+
+<CheckBox android:id="@+id/AutoTrackTZ" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="Auto Track Time Zone Changes" android:textColor="@color/text_color" android:textSize="18dp">
+</CheckBox>
+
+<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<TextView android:id="@+id/TZTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:text="Timezone (UTC)" android:textColor="@color/text_color" android:textSize="18dp">
+</TextView>
+<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerTZ" android:layout_toRightOf="@+id/TZTextView" android:layout_marginLeft="10dp" android:layout_width="wrap_content">
+</Spinner>
+</RelativeLayout>
+
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update" android:id="@+id/SaveButton"  android:textSize="18dp"></Button>
+</RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>
